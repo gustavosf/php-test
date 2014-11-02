@@ -1,0 +1,28 @@
+{
+    "name": "gustavosf/the-simple-php-framework",
+    "description": "The Simple PHP Framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gustavo Seganfredo",
+            "email": "gustavosf@gmail.com"
+        }
+    ],
+    "repositories": [{
+        "type": "git",
+        "name": "gustavosf/the-simple-php-framework-kernel",
+        "url": "git@github.com:gustavosf/the-simple-php-framework-kernel.git"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "gustavosf/the-simple-php-framework-kernel": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "app/vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "app/models"
+        }
+    }
+}
