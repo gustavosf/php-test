@@ -1,4 +1,4 @@
-## Aplicação para verificação de teste de conhecimento
+## Aplicação para teste de conhecimento
 
 Este repositório contém código para uma aplicação de teste de conhecimento. A descrição da tarefa pode ser encontrada [aqui](https://github.com/gustavosf/php-test/blob/master/readme.md).
 
