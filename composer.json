@@ -11,7 +11,7 @@
     "repositories": [{
         "type": "git",
         "name": "gustavosf/the-simple-php-framework-kernel",
-        "url": "git@github.com:gustavosf/the-simple-php-framework-kernel.git"
+        "url": "https://github.com/gustavosf/the-simple-php-framework-kernel"
     }],
     "require": {
         "php": ">=5.4.0",
