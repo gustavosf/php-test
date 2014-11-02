@@ -25,25 +25,20 @@ class FeatureContext extends MinkContext
 	/** @When /^I access the homepage$/ */
     public function goToHomepage()
     {
-		$this->getSession()->visit('http://localhost:4567/');
-        $content = $this->getSession()->getPage()->getContent();
-        throw new \Exception($content);
+        parent::iAmOnHomepage();
     }
 
     /**
-     * @Then I should see a table showing all the users in the xml file
+     * @Then I should see a table showing all the users in the database
      */
-    public function iShouldSeeATableShowingAllTheUsersInTheXmlFile()
+    public function iShouldSeeATableShowingAllTheUsersInTheDatabase()
     {
-        throw new PendingException();
-    }
-
-    /**
-     * @Then I should see a table showing all the users in the sqlite file
-     */
-    public function iShouldSeeATableShowingAllTheUsersInTheSqliteFile()
-    {
-        throw new PendingException();
+        parent::assertElementOnPage('table');
+        parent::assertPageContainsText('Dalana');
+        parent::assertPageContainsText('Jenkins');
+        parent::assertPageContainsText('dalana');
+        parent::assertPageContainsText('asdf');
+        parent::assertPageContainsText('dalana@inmemorian.com');
     }
 
 }
