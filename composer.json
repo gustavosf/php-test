@@ -17,6 +17,13 @@
         "php": ">=5.4.0",
         "gustavosf/the-simple-php-framework-kernel": "dev-master"
     },
+    "require-dev": {
+        "behat/behat": "~3.0.6",
+        "behat/mink": "1.6.*",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*",
+        "phpunit/phpunit": "~4.0"
+    },
     "config": {
         "vendor-dir": "app/vendor"
     },

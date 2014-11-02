@@ -1,0 +1,16 @@
+# Configuration file for behat
+
+default:
+  autoload:
+    '': %paths.base%/app/features/bootstrap
+  suites:
+    default:
+      paths:
+        - %paths.base%/app/features
+
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'http://localhost:4567'
+      sessions:
+        default:
+          goutte: ~
