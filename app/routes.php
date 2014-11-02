@@ -3,5 +3,6 @@
 use Framework\View;
 
 $app->get('/', function() { 
-	return View::forge('hello');
+	$users = Model\User::all();
+	return View::forge('users', ['users' => $users]);
 });

@@ -4,7 +4,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 # Create app with default environment ('development')
-$app = new Framework\Application();
+$app = new Framework\Application('usedb');
 
 # Configurations
 $app->registerPaths(include __DIR__.'/paths.php');
